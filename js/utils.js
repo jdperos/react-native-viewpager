@@ -36,6 +36,6 @@ export const childrenWithOverriddenStyle = (
       ],
       collapsable: false,
     };
-    return React.createElement(child.type, newProps);
+    return React.cloneElement(child.type, newProps);
   });
 };
